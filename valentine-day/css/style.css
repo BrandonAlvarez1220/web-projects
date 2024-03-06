@@ -1,0 +1,93 @@
+/*Configuraciones*/
+:root{
+    --rosa: #F7C3C9;
+    --verde: #ACEB56;
+    --rojo: #E74A4A;
+
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: var(--rosa);
+}
+
+/*Globales*/
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+/*Main*/
+.title{
+    font-size: 8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Namdhinggo';
+    font-weight: 400;
+}
+
+/*Imagen osos*/
+.central{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.abrazo-oso{
+    margin: 2rem 0;
+    width: 30%;
+}
+
+
+/*Botones*/
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 2.5rem;
+}
+
+.configuracion-boton{
+    width: 15rem;
+    height: 4rem;
+    font-size: 2rem;
+    cursor: pointer;
+    border: 0.5px solid black;
+}
+
+.perdonar{
+    background-color: var(--verde);
+}
+
+.no-perdonar{
+    background-color: var(--rojo);
+}
+
+/*Responsive web*/
+@media(max-width: 468px){
+    .title{
+        font-size: 4rem;
+    }
+
+    .botones{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .abrazo-oso{
+        margin: 2rem 0;
+        width: 80%;
+    }
+    
+}

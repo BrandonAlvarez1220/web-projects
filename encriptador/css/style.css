@@ -1,0 +1,226 @@
+/*Globales*/
+:root {
+    --blanco: #FFFFFF;
+    --azulOscuro: #1C2833;
+    --azulClaro: #D4E6F1 ;
+    --verdeLima: #78CF2B;
+    --grisClaro: #E5E7E9;
+    --tipografiaTitulo:  "Lora";
+
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+body{
+    background: var(--blanco); 
+}
+
+
+/*Titulo*/
+header{
+    margin-top: 0rem;
+    background-color: var(--azulOscuro);
+    padding: 4rem;
+}
+
+.titulo{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 5rem;
+    color: var(--blanco);
+    letter-spacing: 3px;
+    font-family: var(--tipografiaTitulo);
+    font-weight: 400;
+}
+
+
+/*Main*/
+.contenedor{
+    width: min(90%,120rem);
+    margin: 0 auto;
+}
+
+main{
+    display: block;
+}
+
+/*Entrada textarea*/
+.input,.output{
+    margin: 5rem 5rem;
+    width: 65rem;
+    height: 40rem;
+    font-size: 2.5rem;
+    resize: none;
+    
+}
+
+.input::placeholder{
+    color: var(--azulOscuro);
+}
+
+/*Salida textarea*/
+.output{
+    width: 30rem;
+    
+}
+
+/*Contenedor botones*/
+.botones{
+    display: block;
+}
+
+/*Estilo general botones*/
+.botones button{
+    font-size: 2rem;
+    padding: 2rem;
+    border-radius: 2.3rem;
+    width: 17rem;
+    cursor: pointer;
+}
+
+/*Estilos especificos*/
+.copiar{
+    margin-left: 20%;
+}
+
+.cifrar,.descifrar{
+    margin-left: 12%;
+}
+
+.botones button:last-child {
+    margin-right: 0;
+}
+
+.cifrar{
+    background-color: var(--azulOscuro);
+    color: var(--blanco);
+    
+}
+
+.descifrar{
+    background-color: var(--azulClaro);
+}
+
+.copiar{
+    background-color: var(--grisClaro);
+}
+
+/*Diseño footer*/
+footer{
+    background-color: var(--azulOscuro);
+    padding: 5rem;
+    margin-top: 2rem;
+    color: var(--blanco);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.copyright{
+    width: 1rem;
+    margin: 0 1rem;
+}
+
+.github-ico{
+    width: 2rem;
+    margin: 0 1rem;
+    margin-top: 1rem;
+}
+
+.linkgit{
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.linkgit:visited{
+    color: var(--blanco);
+}
+
+/*Web responsive para dispositivo movil*/
+@media(max-width: 468px){
+    
+    .titulo{
+        font-size: 2rem;
+    }
+
+    .footer{
+        font-size: 1rem;
+    }
+
+    .texto-footer{
+        font-size: 1rem;
+    }
+
+    .github-ico{
+        width: 1.3rem;
+        margin: 0 1rem;
+        margin-top: 1rem;
+    }
+
+    .input{
+        margin: 2rem auto;
+        width: 100%;
+        height: 20rem;
+        font-size: 1.8rem;
+        resize: none;
+    }
+
+    .output{
+        width: 100%;
+        height: 10rem;
+        margin: 0 auto;
+        font-size: 1.8rem;
+    }
+
+    .botones{
+        display: block;
+    }
+
+    .botones button{
+        padding: 0.5;
+        font-size: 1rem;
+        margin: 0 auto;
+        margin: 1rem 1rem;
+    }
+}
+
+/*Dispositivos tablet*/
+
+@media(max-width: 968px){
+
+    .input{
+        margin: 1.6rem;
+        width: 100%;
+        height: 20rem;
+        font-size: 1.8rem;
+        resize: none;
+    }
+    .output{
+        width: 100%;
+        height: 15rem;
+        margin: 1.6rem;
+        font-size: 1.8rem;
+    }
+
+    .botones{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media(max-width: 1024px){
+    .output{
+        width: 70%;
+    }
+
+    .botones{
+        display: flex;
+        justify-content: space-between;
+    }
+}

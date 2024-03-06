@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    
+    <header>
+        <h1 class="titulo">Encriptador</h1>  
+    </header>
+
+    <main class="contenedor">
+        
+        <div class="elementos">
+            <textarea name="entrada" id="input" class="input" placeholder="Tu texto aquí"></textarea>
+            <textarea id="output" class="output" placeholder="No se ha encontrado ningun texto" disabled></textarea>
+        </div>
+        
+        <div class="botones">
+            <button class="cifrar" onclick="cifrar()">Cifrar</button>
+            <button class="descifrar" onclick="descifrar()">Descifrar</button>
+            <button class="copiar" onclick="copiar()">Copiar</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <p class="texto-footer"><img src="/img/copyright-svgrepo-com.svg" alt="copyright-ico" class="copyright">Brandon Azarael Alvarez Garcia - 2024</p>
+        <p class="texto-footer"><img src="/img/github-142-svgrepo-com.svg" alt="github-ico" class="github-ico"><a href="https://github.com/BrandonAlvarez1220" class="linkgit">BrandonAlvarez1220</a></p>
+    </footer>
+    
+    <script src="app.js"></script>
+
+</body>
+</html>
